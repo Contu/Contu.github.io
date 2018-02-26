@@ -32,6 +32,12 @@ footer
     font-style: italic;
 }
 
+.separator
+{
+    color: #b4b4b4;
+
+}
+
 nav a {
    outline: 0;
 }
@@ -61,6 +67,6 @@ nav > ul > li > a {
     background-color: #E9E581;
     display: block;
     line-height: 2em;
-    padding: 0.7em 0.7em;
+    padding: 0.5em 0em 0.5em 0em;
     text-decoration: none;
 }
