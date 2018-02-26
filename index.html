@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-</head>
-<body>
+    <head>
+	<meta charset="UTF-8">
+	<title>Salvatore Contu</title>
+	<link rel="icon" href="img/sc.png">
+	<link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
 
-    <h1>Test 1</h1>
+	<header>Salvatore Contu's site</header>
 
-</body>
+	<nav>
+	    <ul>
+		<li><a id="home" href="#" onClick="getPage('home');">Home</a></li>
+		<li><a id="page2" href="#" onClick="getPage('page2');">Page2</a></li>
+	    </ul>
+	</nav>
+
+	<section id="content"></section>
+	
+	<footer>
+	    <p>Send comments to <span class="hl">salvatore period contu at gmail period com</span></p>
+	</footer>
+
+	<script>
+
+	 /* function loadPage(name) {
+	    document.getElementById("content").innerHTML='<object type="text/html" data="' + name + '.html" ></object>';
+	    }*/
+
+	 function selectMenu(name) {
+	     var nav = document.getElementsByTagName("nav")[0];
+	     var links = nav.getElementsByTagName("a");
+	     for (var i=0; i<links.length; i++) {
+		 links[i].style.color = "#F6F6F6";
+	     }
+	     document.getElementById(name).style.color= "#DE1B1B";
+	 } 
+	 
+	 function getPage(name) {
+	     var xmlhttp = new XMLHttpRequest();
+
+	     xmlhttp.onreadystatechange = function() {
+		 if (xmlhttp.readyState == XMLHttpRequest.DONE) {   // XMLHttpRequest.DONE == 4
+		     if (xmlhttp.status == 200) {
+			 document.getElementById("content").innerHTML = xmlhttp.responseText;
+			 selectMenu(name);
+		     }
+		     else if (xmlhttp.status == 400) {
+			 alert('There was an error 400');
+		     }
+		     else {
+			 alert('something else other than 200 was returned');
+		     }
+		 }
+	     };
+
+	     xmlhttp.open("GET", name + ".html", true);
+	     xmlhttp.send();
+	 }
+
+	 //load home when the site is open
+	 getPage("home");
+	 
+	</script>
+	
+    </body>
 </html>
