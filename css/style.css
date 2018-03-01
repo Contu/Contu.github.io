@@ -19,11 +19,16 @@ header
     text-align: center;
 }
 
+#content {
+    padding: 15px;
+}
+
 footer
 {
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
+    font-size: 12px;
 }
 
 .hl
