@@ -1,6 +1,6 @@
 body
 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: CarlitoRegular;
     font-size: 14px;
     background-color: #2B2B2B;
     color: white;
@@ -15,9 +15,18 @@ header
     padding-bottom: 20px;
     font-size: 2.5em;
     font-weight: bold;
-    text-decoration: underline;
-    text-align: center;
+    height:100px;
+    /* text-decoration: underline; */
+    /* text-align: center; */
 }
+
+#my-name {
+    text-shadow: 2px 2px #ff0000;
+    float:left;
+    /*height:200px;
+    width:50%;*/  
+}
+
 
 #content {
     padding: 15px;
