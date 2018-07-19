@@ -20,6 +20,17 @@ header
     /* text-align: center; */
 }
 
+.note {
+    font-style: italic;
+    background: #000000;
+    padding: 5px;
+}
+
+.link {
+    text-decoration: none;
+    color: #CC6644;
+}
+
 #my-name {
     text-shadow: 2px 2px #ff0000;
     float:left;
@@ -34,7 +45,7 @@ header
 
 
 #content {
-    padding: 15px;
+    padding: 25px;
 }
 
 footer
@@ -57,7 +68,7 @@ footer
 
 }
 
-nav a {
+a {
    outline: 0;
 }
 
