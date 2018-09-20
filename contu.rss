@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Contu]]></title>
+    <link>https://contu.github.io/</link>
+    <description><![CDATA[]]></description>
+    <item>
+      <title><![CDATA[Title]]></title>
+      <link></link>
+      <description><![CDATA[<p>Daje</p>]]></description>
+      <pubDate>Thu, 20 Sep 2018 06:00:00 -0700</pubDate>
+    </item>
+    </channel>
+</rss>
