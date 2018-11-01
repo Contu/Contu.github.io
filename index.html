@@ -45,25 +45,44 @@
 	 } 
 	 
 	 function getPage(name) {
-	     var xmlhttp = new XMLHttpRequest();
+	     /*
+		var xmlhttp = new XMLHttpRequest();
 
-	     xmlhttp.onreadystatechange = function() {
-		 if (xmlhttp.readyState == XMLHttpRequest.DONE) {   // XMLHttpRequest.DONE == 4
-		     if (xmlhttp.status == 200) {
-			 document.getElementById("content").innerHTML = xmlhttp.responseText;
-			 selectMenu(name);
+		xmlhttp.onreadystatechange = function() {
+		if (xmlhttp.readyState == XMLHttpRequest.DONE) {   
+		if (xmlhttp.status == 200) {
+		document.getElementById("content").innerHTML = xmlhttp.responseText;
+		selectMenu(name);
+		}
+		else if (xmlhttp.status == 400) {
+		alert('There was an error 400');
+		}
+		else {
+		alert('something else other than 200 was returned');
+		}
+		}
+		};
+		
+		xmlhttp.open("GET", name + ".html", true);
+		xmlhttp.send();
+	      */
+	     
+	     fetch(name + ".html")
+		 .then((res) => {
+		     if (res.status == 200) {
+			 return res.text();
 		     }
-		     else if (xmlhttp.status == 400) {
-			 alert('There was an error 400');
-		     }
-		     else {
-			 alert('something else other than 200 was returned');
-		     }
-		 }
-	     };
-
-	     xmlhttp.open("GET", name + ".html", true);
-	     xmlhttp.send();
+		 })
+		 .catch((res) => {
+		     fetch("error.html")
+			 .then((res) => res.text())
+			 .then((res) => document.getElementById("content").innerHTML = res)
+		 })
+		 .then((res) => {
+		     document.getElementById("content").innerHTML = res;
+		     selectMenu(name)}
+		 )
+	     
 	 }
 
 	 //load home when the site is open
