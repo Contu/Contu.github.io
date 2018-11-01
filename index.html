@@ -31,10 +31,6 @@
 
 	<script>
 
-	 /* function loadPage(name) {
-	    document.getElementById("content").innerHTML='<object type="text/html" data="' + name + '.html" ></object>';
-	    }*/
-
 	 function selectMenu(name) {
 	     var nav = document.getElementsByTagName("nav")[0];
 	     var links = nav.getElementsByTagName("a");
@@ -68,20 +64,16 @@
 	      */
 	     
 	     fetch(name + ".html")
+		 .then((res) => res.text())
 		 .then((res) => {
-		     if (res.status == 200) {
-			 return res.text();
-		     }
-		 })
+		     document.getElementById("content").innerHTML = res;
+		     selectMenu(name)}
+		 )
 		 .catch((res) => {
 		     fetch("error.html")
 			 .then((res) => res.text())
 			 .then((res) => document.getElementById("content").innerHTML = res)
 		 })
-		 .then((res) => {
-		     document.getElementById("content").innerHTML = res;
-		     selectMenu(name)}
-		 )
 	     
 	 }
 
