@@ -62,6 +62,12 @@ footer
     font-style: italic;
 }
 
+.h3
+{
+    color: #bb841a;
+    font-weight: normal;
+}       
+
 .separator
 {
     color: #000000;
