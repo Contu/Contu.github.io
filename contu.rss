@@ -5,31 +5,9 @@
     <link>https://contu.github.io/</link>
     <description><![CDATA[]]></description>
     <item>
-      <title><![CDATA[Title 4]]></title>
-      <description><![CDATA[<h1>Nuova descrizione 4</h1>]]></description>
-      <pubDate>Fri Sep 21 11:45:36 CEST 2018</pubDate>
-    </item>
-    <description><![CDATA[]]></description>
-    <item>
-      <title><![CDATA[Title 3]]></title>
-      <description><![CDATA[Nuova descrizione 3]]></description>
-      <pubDate>Fri Sep 21 11:44:55 CEST 2018</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[Title 2]]></title>
-      <description><![CDATA[Nuova descrizione 2]]></description>
-      <pubDate>Fri Sep 21 11:42:28 CEST 2018</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[Nuovo feed]]></title>
-      <description><![CDATA[Nuova descrizione di un feed di prova]]></description>
-      <pubDate>Fri Sep 21 11:18:58 CEST 2018</pubDate>
-    </item>
-    <item>
       <title><![CDATA[Title]]></title>
-      <link/>
-      <description><![CDATA[<p>Daje</p>]]></description>
-      <pubDate>Thu, 20 Sep 2018 06:00:00 -0700</pubDate>
+      <description><![CDATA[First feed for testing]]></description>
+      <pubDate>Fri Sep 21 11:45:36 CEST 2018</pubDate>
     </item>
   </channel>
 </rss>
