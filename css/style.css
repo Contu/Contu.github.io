@@ -21,12 +21,13 @@ header
 }
 
 .subtitle {
-    color: #e0e0d1;
+    color: #b7b795;
     font-weight: bold;
 }
 
 .content {
-    padding-left: 5px;
+    padding-top: 5px;
+    padding-left: 15px;
 }
 
 .note {
