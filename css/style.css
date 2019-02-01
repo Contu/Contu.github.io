@@ -28,12 +28,14 @@ header
 .content {
     padding-top: 5px;
     padding-left: 15px;
+    text-align: justify;
 }
 
 .note {
     font-style: italic;
     background: #000000;
     padding: 5px;
+    text-align: justify;
 }
 
 .link {
